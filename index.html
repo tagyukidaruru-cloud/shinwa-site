@@ -92,7 +92,7 @@
   --sans: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", sans-serif;
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+html { scroll-behavior: smooth; scroll-padding-top: 82px; }
 body {
   font-family: var(--sans);
   color: var(--text);
@@ -106,8 +106,8 @@ body {
 img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; text-decoration: none; }
 .inner { max-width: 1080px; margin: 0 auto; padding: 0 18px; }
-section { padding: 42px 0; scroll-margin-top: 72px; }
-[id] { scroll-margin-top: 72px; }
+section { padding: 42px 0; scroll-margin-top: 82px; }
+[id] { scroll-margin-top: 82px; }
 .section-label {
   display: block;
   color: var(--gold);
@@ -156,10 +156,11 @@ header {
 .header-inner {
   max-width: 1160px; margin: 0 auto; padding: 0 18px;
   display: flex; align-items: center; justify-content: space-between;
-  height: 60px;
+  height: 70px;
 }
-.logo { font-family: var(--serif); font-size: 1.15rem; font-weight: 700; color: var(--navy); line-height: 1.2; }
-.logo small { display: block; font-size: .56rem; color: var(--gold); letter-spacing: .18em; font-family: var(--sans); }
+.logo { font-family: var(--serif); font-size: 1.55rem; font-weight: 700; color: var(--navy); line-height: 1.15; }
+.logo small { display: block; font-size: .6rem; color: var(--gold); letter-spacing: .16em; font-family: var(--sans); margin-top: 2px; }
+@media (min-width: 600px) { .logo { font-size: 1.75rem; } }
 nav.pc-nav { display: none; }
 nav.pc-nav a { font-size: .9rem; font-weight: 500; color: var(--navy); margin-left: 24px; }
 nav.pc-nav a:hover { color: var(--gold); }
@@ -171,7 +172,7 @@ nav.pc-nav a:hover { color: var(--gold); }
 
 /* ============ ヒーロー ============ */
 .hero {
-  margin-top: 60px;
+  margin-top: 70px;
   background:
     linear-gradient(rgba(14,35,56,.72), rgba(14,35,56,.72)),
     linear-gradient(135deg, #23486e 0%, #0e2338 100%);
