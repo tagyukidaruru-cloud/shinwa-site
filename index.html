@@ -20,8 +20,12 @@
   "@type": "RealEstateAgent",
   "name": "新和土地建物",
   "description": "創業46年、千葉県船橋市の地域密着不動産会社。不動産売却・買取・任意売却・賃貸管理に対応。相続不動産や空き家の売却相談も無料。",
+  "telephone": "047-467-0992",
+  "faxNumber": "047-467-0997",
   "address": {
     "@type": "PostalAddress",
+    "postalCode": "274-0064",
+    "streetAddress": "松が丘4-13-4",
     "addressLocality": "船橋市",
     "addressRegion": "千葉県",
     "addressCountry": "JP"
@@ -29,7 +33,9 @@
   "areaServed": ["船橋市","習志野市","鎌ヶ谷市","市川市","千葉県"],
   "foundingDate": "1980",
   "priceRange": "無料相談",
-  "openingHours": "Mo-Sa 09:00-18:00"
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Thursday","Friday","Saturday","Sunday"], "opens": "09:00", "closes": "18:30" }
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -229,7 +235,7 @@ nav.pc-nav a:hover { color: var(--gold); }
 .reason-card h3 { color: var(--navy); font-size: 1.05rem; margin-bottom: 6px; line-height: 1.4; }
 .reason-card p { color: var(--text-soft); font-size: .9rem; line-height: 1.65; }
 @media (min-width: 640px) { .reasons-grid { grid-template-columns: 1fr 1fr; } }
-@media (min-width: 1000px) { .reasons-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (min-width: 1000px) { .reasons-grid { grid-template-columns: repeat(4, 1fr); } }
 
 /* ============ サービス ============ */
 .services { background: var(--bg-navy-tint); }
@@ -457,33 +463,23 @@ footer .copy { font-size: .72rem; opacity: .6; margin-top: 12px; }
     <div class="reasons-grid">
       <div class="reason-card">
         <span class="no">REASON 01</span>
-        <h3>創業46年の信頼</h3>
-        <p>船橋の地で46年。長く商売を続けられるのは、誠実な仕事を積み重ねてきた証だと考えています。売買実績は300件以上にのぼります。</p>
+        <h3>創業46年・売買300件以上</h3>
+        <p>船橋の地で46年、売買実績は300件以上。地域の相場や街並みを知り尽くした地元の目で、あなたの不動産を適正に見極めます。</p>
       </div>
       <div class="reason-card">
         <span class="no">REASON 02</span>
-        <h3>地域を知り尽くした地元密着</h3>
-        <p>船橋市を中心に、習志野市・鎌ヶ谷市・市川市の相場や街の特性を熟知。地元だからこそ、適正な価格と最適な売り方をご提案できます。</p>
+        <h3>ご紹介で選ばれ続けている</h3>
+        <p>お客様の多くは、過去のお客様やそのご家族からのご紹介です。次の方をご紹介いただける──それが、私たちの仕事への何よりの評価だと考えています。</p>
       </div>
       <div class="reason-card">
         <span class="no">REASON 03</span>
-        <h3>ご紹介で選ばれる会社</h3>
-        <p>現在のお客様の多くは、過去のお客様からのご紹介です。「知人に紹介したい」と思っていただける仕事を、これからも続けてまいります。</p>
+        <h3>相談から対応まで、とにかく早い</h3>
+        <p>少数精鋭の地元企業だから、意思決定も行動もスピーディー。ご連絡から現地確認・査定のご提示まで、大手にはないフットワークでお応えします。</p>
       </div>
       <div class="reason-card">
         <span class="no">REASON 04</span>
-        <h3>大手にはないフットワーク</h3>
-        <p>ご相談から現地確認、査定のご提示まで、とにかく早い。少数精鋭の地元企業だからこそ、意思決定も行動もスピーディーです。</p>
-      </div>
-      <div class="reason-card">
-        <span class="no">REASON 05</span>
-        <h3>遠方の物件にも対応</h3>
-        <p>千葉県内はもちろん、遠方の相続不動産などにも柔軟に対応。鹿児島県の物件を販売開始からわずか1日で成約させた実績もあります。</p>
-      </div>
-      <div class="reason-card">
-        <span class="no">REASON 06</span>
         <h3>押し売り営業は一切しません</h3>
-        <p>査定したからといって、売却を無理にお勧めすることはありません。お客様のご事情に寄り添い、売らないという選択肢も含めてご提案します。</p>
+        <p>査定したからといって、売却を無理にお勧めすることはありません。「売らない」という選択も含め、お客様にとって最善の道を一緒に考えます。</p>
       </div>
     </div>
   </div>
@@ -552,7 +548,7 @@ footer .copy { font-size: .72rem; opacity: .6; margin-top: 12px; }
 <section id="results">
   <div class="inner">
     <span class="section-label">RESULTS</span>
-    <h2>実績とお客様の声</h2>
+    <h2>これまでの実績</h2>
 
     <div class="stats-row">
       <div class="stat"><div class="num">46<span>年</span></div><div class="label">創業からの歴史</div></div>
@@ -562,30 +558,12 @@ footer .copy { font-size: .72rem; opacity: .6; margin-top: 12px; }
     </div>
 
     <div class="case-highlight">
-      <span class="tag">印象的だった案件</span>
-      <h3>鹿児島県の売却案件 ── 販売開始からわずか1日で成約。</h3>
-      <p>千葉から遠く離れた鹿児島県の不動産売却のご依頼。物件調査に2日間かけて丁寧に対応し、販売を開始したところ、わずか1日で成約に至りました。距離は関係ありません。必要なのは、動く力と調べる力。遠方の相続不動産でお困りの方も、ぜひご相談ください。</p>
+      <span class="tag">対応事例</span>
+      <h3>遠方の不動産でも、あきらめずに。</h3>
+      <p>千葉から遠く離れた、鹿児島県の不動産売却のご依頼をいただいたことがあります。「遠方だから」とお断りする会社も少なくないなかで、当社は現地の物件調査に2日間をかけ、状況をひとつずつ確認しました。結果として、販売開始から早い段階でのご成約につながりました。距離を理由にあきらめる前に、一度ご相談いただければと思います。</p>
       <div class="nums">
-        <div><div class="n">2日</div><div class="l">物件調査</div></div>
-        <div><div class="n">1日</div><div class="l">販売開始から成約まで</div></div>
-      </div>
-    </div>
-
-    <div class="voice-grid">
-      <div class="voice">
-        <div class="stars">★★★★★</div>
-        <p>父から相続した実家の処分で悩んでいたところ、知人の紹介で相談しました。何から手をつければいいのかも分からない状態でしたが、登記のことから丁寧に教えていただき、安心してお任せできました。</p>
-        <div class="who">船橋市・60代女性（相続不動産の売却）</div>
-      </div>
-      <div class="voice">
-        <div class="stars">★★★★★</div>
-        <p>大手にも査定をお願いしましたが、こちらは対応の早さがまったく違いました。連絡したその週には査定額を提示していただき、納得のいく価格で売却できました。</p>
-        <div class="who">習志野市・50代男性（戸建ての売却）</div>
-      </div>
-      <div class="voice">
-        <div class="stars">★★★★★</div>
-        <p>長年空き家にしていた家を、家財が残ったまま買い取っていただきました。片付けの負担もなく、気持ちの整理までできた気がします。もっと早く相談すればよかったです。</p>
-        <div class="who">鎌ヶ谷市・70代男性（空き家の買取）</div>
+        <div><div class="n">鹿児島県</div><div class="l">遠方の売却案件</div></div>
+        <div><div class="n">2日</div><div class="l">現地の物件調査</div></div>
       </div>
     </div>
   </div>
@@ -602,7 +580,7 @@ footer .copy { font-size: .72rem; opacity: .6; margin-top: 12px; }
         <h3>不動産の仕事は、人生の節目に寄り添う仕事です。</h3>
         <p>新和土地建物は、創業から46年、この船橋の地で不動産の仕事をさせていただいてまいりました。不動産の売却は、相続、住み替え、ご家族の変化など、人生の大きな節目に訪れるものです。だからこそ私たちは、一件一件のご相談に、じっくりと、丁寧に向き合うことを何より大切にしています。</p>
         <p>当社には、派手な広告も、強引な営業もありません。あるのは、お客様からのご紹介で仕事が続いていくという、ありがたい信頼の連鎖です。「あの会社に相談してよかった」──その一言のために、これからも船橋の皆さまのお役に立ってまいります。どんな小さなことでも、まずはお気軽にご相談ください。</p>
-        <div class="name"><small>新和土地建物 代表</small>代表者名（要差し替え）</div>
+        <div class="name"><small>有限会社 新和土地建物 代表</small>堤田 隆</div>
       </div>
     </div>
   </div>
@@ -664,21 +642,24 @@ footer .copy { font-size: .72rem; opacity: .6; margin-top: 12px; }
     <div class="company-grid">
       <div>
         <table class="company-table">
-          <tr><th>会社名</th><td>新和土地建物</td></tr>
-          <tr><th>所在地</th><td>千葉県船橋市（詳細住所を記載してください）</td></tr>
+          <tr><th>会社名</th><td>有限会社 新和土地建物</td></tr>
+          <tr><th>代表者</th><td>堤田 隆</td></tr>
+          <tr><th>所在地</th><td>〒274-0064<br>千葉県船橋市松が丘4-13-4</td></tr>
+          <tr><th>アクセス</th><td>京成松戸線「高根木戸駅」より徒歩約15分<br>北習志野駅・船橋日大前駅もご利用いただけます</td></tr>
+          <tr><th>駐車場</th><td>あり（店舗右隣の駐車スペースをご利用ください）</td></tr>
           <tr><th>創業</th><td>1980年（創業46年）</td></tr>
           <tr><th>事業内容</th><td>不動産売却（仲介）／不動産買取／任意売却／賃貸管理</td></tr>
           <tr><th>営業エリア</th><td>船橋市を中心に、習志野市・鎌ヶ谷市・市川市ほか千葉県全域。遠方案件もご相談ください。</td></tr>
-          <tr><th>営業時間</th><td>9:00〜18:00（要確認・修正）</td></tr>
-          <tr><th>定休日</th><td>水曜日（要確認・修正）</td></tr>
+          <tr><th>営業時間</th><td>9:00〜18:30</td></tr>
+          <tr><th>定休日</th><td>毎週水曜日・第2・第3火曜日（年末年始・GW・夏季休暇）</td></tr>
           <tr><th>電話番号</th><td><a href="tel:0474670992" style="color:var(--navy);font-weight:700">047-467-0992</a></td></tr>
           <tr><th>FAX</th><td>047-467-0997</td></tr>
-          <tr><th>免許番号</th><td>千葉県知事（　）第　　　号（要記載）</td></tr>
+          <tr><th>免許番号</th><td>千葉県知事（12）第6900号</td></tr>
+          <tr><th>所属団体</th><td>（一社）千葉県宅地建物取引業協会／（公社）首都圏不動産公正取引協議会</td></tr>
         </table>
       </div>
       <div class="map-wrap">
-        <!-- 正式住所が決まったら q= の値を住所に差し替えてください -->
-        <iframe src="https://maps.google.com/maps?q=%E5%8D%83%E8%91%89%E7%9C%8C%E8%88%B9%E6%A9%8B%E5%B8%82&t=m&z=13&output=embed&iwloc=near" loading="lazy" title="新和土地建物 所在地地図" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://maps.google.com/maps?q=%E5%8D%83%E8%91%89%E7%9C%8C%E8%88%B9%E6%A9%8B%E5%B8%82%E6%9D%BE%E3%81%8C%E4%B8%984-13-4&t=m&z=17&output=embed&iwloc=near" loading="lazy" title="新和土地建物 所在地（千葉県船橋市松が丘4-13-4）" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </div>
@@ -695,7 +676,7 @@ footer .copy { font-size: .72rem; opacity: .6; margin-top: 12px; }
       <div class="channel">
         <div class="ch-label">お急ぎの方はお電話で</div>
         <a href="tel:0474670992" class="tel-big">047-467-0992</a>
-        <div class="note">受付時間 9:00〜18:00（水曜定休）</div>
+        <div class="note">受付時間 9:00〜18:30／水曜・第2・第3火曜定休</div>
       </div>
       <div class="channel">
         <div class="ch-label">スマホで気軽に相談</div>
