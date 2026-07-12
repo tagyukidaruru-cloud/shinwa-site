@@ -75,14 +75,14 @@
 <style>
 /* ============ 基本設計 ============ */
 :root {
-  --navy: #16324f;
-  --navy-deep: #0e2338;
-  --navy-light: #2a4a6b;
+  --navy: #234a3d;
+  --navy-deep: #16342a;
+  --navy-light: #356050;
   --gold: #a8863a;
   --gold-light: #c4a45f;
   --bg: #ffffff;
-  --bg-warm: #f7f5f0;
-  --bg-navy-tint: #f0f3f7;
+  --bg-warm: #f4f5ef;
+  --bg-navy-tint: #eef3ef;
   --text: #2b2b2b;
   --text-soft: #55606c;
   --line-green: #06c755;
@@ -91,10 +91,10 @@
   --serif: "Noto Serif JP", "Hiragino Mincho ProN", "Yu Mincho", serif;
   --sans: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", sans-serif;
   /* ヒーロー背景グラデーション／オープニング */
-  --hero-a: #23486e;
-  --hero-b: #0e2338;
-  --hero-veil: 14, 35, 56;
-  --hero-glow: 90, 130, 180;
+  --hero-a: #2c5346;
+  --hero-b: #14291f;
+  --hero-veil: 16, 40, 30;
+  --hero-glow: 120, 165, 120;
   --intro-bg: #ffffff;
   --intro-fg: var(--navy);
 }
@@ -200,7 +200,7 @@ body.intro-lock { overflow: hidden; }
 
 /* ============ ヒーロー ============ */
 .hero {
-  margin-top: 70px;
+  margin-top: 98px;
   position: relative; overflow: hidden; isolation: isolate;
   color: #fff;
   padding: 62px 0 54px;
@@ -446,7 +446,7 @@ footer .copy { font-size: .72rem; opacity: .6; margin-top: 12px; }
 }
 </style>
 </head>
-<body data-intro-mode="once">
+<body data-intro-mode="always">
 
 <!-- オープニング演出 -->
 <div class="intro" id="intro" role="presentation" aria-hidden="true">
@@ -471,6 +471,8 @@ footer .copy { font-size: .72rem; opacity: .6; margin-top: 12px; }
     </nav>
   </div>
 </header>
+
+<div style="position:fixed;top:70px;left:0;right:0;z-index:150;background:#234a3d;color:#fff;font-size:12px;text-align:center;padding:5px 10px;font-family:sans-serif;">カラー案B：グリーン × ゴールド（比較用・オープニングは再読込で再生）</div>
 
 <!-- ①ヒーロー -->
 <div class="hero" id="top">
