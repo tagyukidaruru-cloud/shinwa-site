@@ -300,12 +300,13 @@ body.intro-lock { overflow: hidden; }
 @media (min-width: 900px) { .service-grid { grid-template-columns: repeat(3, 1fr); } }
 
 /* ============ 実績 ============ */
-.stats-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 28px; }
+.stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 28px; }
 .stat {
-  flex: 1 1 110px; text-align: center; background: var(--bg-warm);
-  border-radius: var(--radius); padding: 14px 8px;
+  text-align: center; background: var(--bg-warm);
+  border-radius: var(--radius); padding: 16px 6px;
+  display: flex; flex-direction: column; justify-content: center;
 }
-.stat .num { font-family: var(--serif); font-size: 1.6rem; color: var(--navy); font-weight: 700; line-height: 1.3; }
+.stat .num { font-family: var(--serif); font-size: 1.5rem; color: var(--navy); font-weight: 700; line-height: 1.25; white-space: nowrap; }
 .stat .num span { font-size: .85rem; }
 .stat .label { font-size: .78rem; color: var(--text-soft); }
 .case-highlight {
@@ -612,7 +613,6 @@ footer .copy { font-size: .72rem; opacity: .6; margin-top: 12px; }
     <div class="stats-row">
       <div class="stat"><div class="num">46<span>年</span></div><div class="label">創業からの歴史</div></div>
       <div class="stat"><div class="num">300<span>件以上</span></div><div class="label">売買実績</div></div>
-      <div class="stat"><div class="num">1<span>日</span></div><div class="label">遠方案件の最短成約</div></div>
       <div class="stat"><div class="num">0<span>円</span></div><div class="label">相談・査定料</div></div>
     </div>
 
