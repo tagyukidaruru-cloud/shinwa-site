@@ -837,24 +837,24 @@ footer .copy { font-size: .72rem; opacity: .6; margin-top: 12px; }
   var EASE = 'cubic-bezier(.22,.61,.36,1)';
 
   // 万一アニメが走らなくても白画面で固まらないよう安全弁
-  var safety = setTimeout(finish, 6200);
+  var safety = setTimeout(finish, 5300);
 
   function play() {
     name.animate(
       [{ opacity: 0, transform: 'translateY(20px)' }, { opacity: 1, transform: 'translateY(0)' }],
-      { duration: 1400, delay: 250, easing: EASE, fill: 'forwards' }
+      { duration: 1100, delay: 200, easing: EASE, fill: 'forwards' }
     );
     line.animate(
       [{ opacity: 0, transform: 'scaleX(0)' }, { opacity: 1, transform: 'scaleX(1)' }],
-      { duration: 950, delay: 1000, easing: EASE, fill: 'forwards' }
+      { duration: 650, delay: 800, easing: EASE, fill: 'forwards' }
     );
     sub.animate(
       [{ opacity: 0 }, { opacity: 1 }],
-      { duration: 900, delay: 1450, easing: 'ease-out', fill: 'forwards' }
+      { duration: 600, delay: 1150, easing: 'ease-out', fill: 'forwards' }
     );
     var out = intro.animate(
       [{ opacity: 1, transform: 'scale(1)' }, { opacity: 0, transform: 'scale(1.03)' }],
-      { duration: 1200, delay: 3700, easing: 'cubic-bezier(.4,0,.2,1)', fill: 'forwards' }
+      { duration: 900, delay: 3100, easing: 'cubic-bezier(.4,0,.2,1)', fill: 'forwards' }
     );
     out.onfinish = function () { clearTimeout(safety); finish(); };
     out.oncancel = function () { clearTimeout(safety); finish(); };
