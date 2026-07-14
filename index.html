@@ -447,7 +447,7 @@ footer .copy { font-size: .72rem; opacity: .6; margin-top: 12px; }
 }
 </style>
 </head>
-<body data-intro-mode="once">
+<body data-intro-mode="always">
 
 <!-- オープニング演出 -->
 <div class="intro" id="intro" role="presentation" aria-hidden="true">
@@ -837,24 +837,24 @@ footer .copy { font-size: .72rem; opacity: .6; margin-top: 12px; }
   var EASE = 'cubic-bezier(.22,.61,.36,1)';
 
   // 万一アニメが走らなくても白画面で固まらないよう安全弁
-  var safety = setTimeout(finish, 5200);
+  var safety = setTimeout(finish, 6200);
 
   function play() {
     name.animate(
-      [{ opacity: 0, transform: 'translateY(18px)' }, { opacity: 1, transform: 'translateY(0)' }],
-      { duration: 950, delay: 150, easing: EASE, fill: 'forwards' }
+      [{ opacity: 0, transform: 'translateY(20px)' }, { opacity: 1, transform: 'translateY(0)' }],
+      { duration: 1400, delay: 250, easing: EASE, fill: 'forwards' }
     );
     line.animate(
       [{ opacity: 0, transform: 'scaleX(0)' }, { opacity: 1, transform: 'scaleX(1)' }],
-      { duration: 750, delay: 620, easing: EASE, fill: 'forwards' }
+      { duration: 950, delay: 1000, easing: EASE, fill: 'forwards' }
     );
     sub.animate(
       [{ opacity: 0 }, { opacity: 1 }],
-      { duration: 700, delay: 950, easing: 'ease-out', fill: 'forwards' }
+      { duration: 900, delay: 1450, easing: 'ease-out', fill: 'forwards' }
     );
     var out = intro.animate(
       [{ opacity: 1, transform: 'scale(1)' }, { opacity: 0, transform: 'scale(1.03)' }],
-      { duration: 900, delay: 2250, easing: 'cubic-bezier(.4,0,.2,1)', fill: 'forwards' }
+      { duration: 1200, delay: 3700, easing: 'cubic-bezier(.4,0,.2,1)', fill: 'forwards' }
     );
     out.onfinish = function () { clearTimeout(safety); finish(); };
     out.oncancel = function () { clearTimeout(safety); finish(); };
