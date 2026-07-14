@@ -809,7 +809,7 @@ footer .copy { font-size: .72rem; opacity: .6; margin-top: 12px; }
    ゴールドのライン→英字→ホールド→溶暗でヒーローへ。
    ネイティブの Web Animations API を使用（外部ライブラリ非依存・
    GPU合成で60fps・プレビューやオフラインでも確実に動作）。
-   初回のみ再生し、以降は localStorage でスキップ。 */
+   サイトを開くたびに1回再生（同一セッション内の再読込ではスキップ）。 */
 (function () {
   var intro = document.getElementById('intro');
   if (!intro) return;
@@ -825,10 +825,10 @@ footer .copy { font-size: .72rem; opacity: .6; margin-top: 12px; }
 
   // 再訪問／動きを抑える設定 → 即スキップ
   var seen = false;
-  try { seen = (mode !== 'always') && !!localStorage.getItem(KEY); } catch (e) {}
+  try { seen = (mode !== 'always') && !!sessionStorage.getItem(KEY); } catch (e) {}
   if (reduce || seen) { finish(); return; }
 
-  if (mode !== 'always') { try { localStorage.setItem(KEY, '1'); } catch (e) {} }
+  if (mode !== 'always') { try { sessionStorage.setItem(KEY, '1'); } catch (e) {} }
   body.classList.add('intro-lock');
 
   var name = intro.querySelector('.intro-name');
